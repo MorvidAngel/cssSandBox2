@@ -13,8 +13,30 @@
 
         .box {
             background: white;
-            width: 200px;
+            width: 10px;
             height: 200px;
+            position: relative;
+            /* animation-name: animate1;
+            animation-duration: 5s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+            animation-delay: 1s;
+            animation-direction: alternate;
+            animation-timing-function: ease-in-out; */
+            animation: animate1 9s infinite forwards 1s alternate ease-in-out;
+        }
+
+        @keyframes animate1 {
+            from {
+                top: 0;
+                /* width: 200px; */
+            }
+
+            to {
+                width: 100%;
+                background-color: red;
+                top: 80vh;
+            }
         }
     </style>
 </head>
